@@ -51,9 +51,17 @@ export const transformFunctions = {
   fraction(value: any) {
     return !(typeof value === "number") || value > 1 ? value : `${value * 100}%`
   },
+  clear(value: any, theme: Record<string, any>) {
+    const map = { left: "right", right: "left" } as any
+    return theme.direction === "rtl" ? map[value] : value
+  },
   float(value: any, theme: Record<string, any>) {
     const map = { left: "right", right: "left" } as any
     return theme.direction === "rtl" ? map[value] : value
+  },
+  textAlign(value: any) {
+    const map = { left: "start", right: "end" } as any
+    return map[value] ? map[value] : value
   },
   degree(value: any) {
     if (isCssVar(value) || value == null) return value
