@@ -12,9 +12,9 @@ export const space: Config = {
   marginBlockEnd: t.spaceT("marginBlockEnd"),
   marginLeft: t.spaceT("marginLeft"),
   marginInlineStart: t.spaceT("marginInlineStart"),
-  marginX: t.spaceT(["marginInlineStart", "marginInlineEnd"]),
+  marginX: t.spaceT("marginInline"),
   marginInline: t.spaceT("marginInline"),
-  marginY: t.spaceT(["marginTop", "marginBottom"]),
+  marginY: t.spaceT("marginBlock"),
   marginBlock: t.spaceT("marginBlock"),
   padding: t.space("padding"),
   paddingTop: t.space("paddingTop"),
@@ -25,9 +25,9 @@ export const space: Config = {
   paddingLeft: t.space("paddingLeft"),
   paddingInlineStart: t.space("paddingInlineStart"),
   paddingInlineEnd: t.space("paddingInlineEnd"),
-  paddingX: t.space(["paddingInlineStart", "paddingInlineEnd"]),
+  paddingX: t.space("paddingInline"),
   paddingInline: t.space("paddingInline"),
-  paddingY: t.space(["paddingTop", "paddingBottom"]),
+  paddingY: t.space("paddingBlock"),
   paddingBlock: t.space("paddingBlock"),
 }
 
